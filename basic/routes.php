@@ -21,8 +21,8 @@ Route::get('contact',function()
 {	
 	return view('pages.contacts'); 
 	#look for resources/views/pages/contacts.blade.php
-	#even / works instead of .
-	# return view('pages/contacts');
+	#or
+	return view('pages/contacts');
 });
 
 #passing values to views
@@ -45,6 +45,16 @@ Route::get('/',function()
 	return View::make();
 
 });
+
+
+#PagesController is the controller
+#home is the method name
+Route::get('/','PagesController@home');
+Route::get('about','PagesController@about'); #localhots:8000/about
+
+
+
+
 
 
 
