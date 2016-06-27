@@ -53,6 +53,30 @@ Route::get('/','PagesController@home');
 Route::get('about','PagesController@about'); #localhots:8000/about
 
 
+#Fetching data
+Route::get('cards/create','CardsController@create');
+
+#posting/storing data
+Route::post('cards','CardsController@store');
+
+#creating 
+Route::post('cards/create','CardsContoller@create');
+
+#to edit
+Route::post('cards/1/edit','CardsController@edit');
+
+#to update
+Route::put('cards/1','CardsController@update');
+
+#to delete
+Route::delete('cards/1','CardsController@destroy');
+
+#Get request to display all the cards
+Route::get('cards','CardsController@index') #localhost:8000/cards
+
+#To get a particular card
+Route::get('cards/{card}','CardsController@show');
+
 
 
 
