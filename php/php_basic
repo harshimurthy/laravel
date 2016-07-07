@@ -1,6 +1,50 @@
-//echo
+//php basic syntax
 
 <?php
-          echo "My first line of PHP!"
+
+	//echo
+		$name="Harshitha"
+		 echo "My first line of $name";
+		 echo "Hey". " Whats up"; #concatenation operator
+		 $items = 6;    
+        
+    //if else
+        if($items > 5) {
+          echo "You get a 10% discount!";
+        }
+        elseif($items <5){
+        echo "You get a 5% discount!";
+        }
+        else{
+        echo "Nope!";
+        }
+
+    //switch case
+	    $fruit = "Apple";
+	    switch ($fruit) {
+	        case 'Apple':
+	            echo "Yummy.";
+	            break;
+	        default: echo "None";
+	    }
+
+	 //arrays
+		 $array1 = array("Egg", "Tomato", "Beans","Chips","Sausage");
+		 $tens = array(10, 20, 30, 40, 50);
+	        echo $tens[2];
+	     $tens[2]=40; //30 changes to 40
+	     unset($array[2]); //removes 3rd elements
+	     unset($array); //removes full array
+
+     //for loop
+	     for ($i = 2; $i < 11; $i = $i + 2){
+	          echo $i;
+	        }
+
+	 //foreach
+	 	$langs = array("JavaScript", "HTML/CSS", "PHP","Python", "Ruby");
+          foreach ($langs as $lang) {
+              echo "<li>$lang</li>";
+          }
 ?>
 
